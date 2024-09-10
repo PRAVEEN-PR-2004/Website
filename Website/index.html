@@ -1,11 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .text-white
+      {
+        color: black;
+        font-size: large;
+        font-weight: bolder;
+      }
+      body {
+       height: 100vh;
+       overflow: auto;
+        width: 100vw;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .noborder
+      {
+        border: none !important;
+      }
+      .section1 {
+        width: 70%;
+        height: 30%;
+        background-color: #c0b7b7;
+        border: 1px solid black;
+        display: flex;
+
+        justify-content: space-around;
+      }
+      .section1 img
+      {
+
+      }
+      .profile {
+        display: flex;
+        align-items: start;
+      }
+      .name {
+        display: flex;
+
+        flex-direction: column;
+
+        margin-top: 5%;
+      }
+      .section2 {
+        width: 70%;
+        height: 25%;
+        background-color: #f5f5f5;
+        border: 1px solid rgb(7, 7, 7);
+        border-top: 0px;
+      }
+      .section2 h1 {
+        padding-left: 3%;
+        margin-top: 2%;
+      }
+      .section2 p {
+        margin-top: 1%;
+        padding-left: 3%;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-style: italic;
+        line-height: 1.5;
+        font-size: 15px;
+        margin-bottom: 2%;
+      }
+      .section3 {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 50%;
+        border-top: 0px;
+       
+       
+      }
+
+      .project {
+        border: 1px solid black;
+        border-top: 0;
+        display: flex;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        background-color: #c0b7b7;
+      }
+
+      .projectlist {
+        border: 1px solid black;
+        display: flex;
+        width: 70%;
+        border-top: 0px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(57, 53, 53);
+      }
+      .projectlist dl dt{
+        font-size: larger;
+        font-weight: bold;
+       
+        color: white;
+       
+      }
+      .projectlist dl dt dd{
+        font-size: smaller;
+        font-weight: 100;
+        
+        
+        
+      }
+      dd
+      {
+        
+        color: aliceblue;
+      }
+      .section4 {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 30%;
+        
+        border: 1px solid rgb(10, 10, 10);
+        border-top: 0px;
+      }
+      .section4 h2
+      {
+        padding-left: 3%;
+        margin-top: 2%;
+      }
+      .skills ul
+      {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+     li{
+        
+        font-style: italic;
+        line-height: 1.5;
+        list-style: none;
+        text-align: end;
+        list-style-position: outside;
+       
+     }
+     .section5 {
+        width: 70%;
+        height: 10%;
+        background-color: #c0b7b7;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        
+      }
+     
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="noborder section1">
+      <img src="assets/Doodledanii_Profile.png" alt="hello" class="noborder profile" />
+      <div class="noborder name">
+        <h1>PRAVEEN PR</h1>
+
+        <h3>WEB DEVELOPER</h3>
+      </div>
+    </div>
+    <div class="noborder section2">
+      <h1>ABOUT ME</h1>
+      <p>
+        My name is Praveen, and I am an enthusiastic Computer Science and
+        Engineering (CSE) student with a passion for Java development. I have
+        honed my skills through solving numerous Java problems on LeetCode,
+        enhancing my understanding of algorithms and data structures.
+      </p>
+    </div>
+    <div class="noborder section3">
+      <div class="noborder project">
+        <h2>PROJECTS</h2>
+      </div>
+      <div class="noborder projectlist">
+        <dl>
+            <dt>GT HOLIDAYS CLONE</dt>
+            <dd>react| boostrap</dd>
+            <dt>TO-DO LIST</dt>
+            <dd>react| boostrap| express js| node js| mongodb</dd>
+            <dt>PROTFOLIO</dt>
+            <dd>react| boostrap</dd>
+            <dt>FOOD ORDER WEBSITE</dt>
+            <dd>react| boostrap</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="noborder section4">
+        <h2>SKILLS</h2>
+        
+       
+            <div class="noborder skills">
     
-</body>
+                <ul>
+                    <li>REACT</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVA</li>
+                </ul>
+                <ul>
+                    <li>MONGODB</li>
+                    <li>NODE JS</li>
+                    <li>EXPRESS JS</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
+            </div>
+        
+    </div>
+    <div class="noborder section5">
+      <a  href="tel:+91 9597412160">
+        <i class="fa-solid fa-phone text-white"></i>
+      </a>
+      <a href="mailto:praveen2004ttp@gmail.com">
+        <i class="fa-solid fa-envelope text-white"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/praveen-p-r-15-09-2004-ttp/">
+        <i class="fa-brands fa-linkedin text-white"></i>
+      </a>
+    </div>
+  </body>
 </html>
