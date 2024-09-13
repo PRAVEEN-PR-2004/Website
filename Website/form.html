@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0%;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: #f7f3e3;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        border: 4px solid black;
+        border-radius: 3%;
+        padding: 5%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #2b2118;
+        transition: transform 1s ease-in;
+      }
+      input {
+        margin-bottom: 8%;
+        border: 1px solid #f7f3e3;
+        padding: 2%;
+        text-align: center;
+        font-weight: bolder;
+      }
+     
+      label {
+        margin-bottom: 2%;
+        color: #f7f3e3;
+      }
+      form:hover {
+        transform: translateY(-3%);
+      }
+      form button
+      {
+        padding: 2%;
+        background-color: #f7f3e3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" >
+      <form onsubmit="getinfo(event)">
+       
+        <input type="text" id="name" placeholder="enter your name" />
+       
+        <input type="number" id="num" placeholder="enter your age" />
+        
+        <input type="tel" id="phone" placeholder="enter your number" />
+        
+        <button type="submit" >SUBMIT</button>
+      </form>
+    </div>
+  </body>
+  <script>
+      function getinfo(e)
+      {
+         e.preventDefault(); 
+        let num = document.getElementById("num").value;
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("phone").value;
+        console.log(num);
+        console.log(phone);
+        console.log(name);
+      }
+  </script>
+</html>
