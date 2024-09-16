@@ -71,9 +71,25 @@
         let num = document.getElementById("num").value;
         let name = document.getElementById("name").value;
         let phone = document.getElementById("phone").value;
+        let permission = num>18?"allowed":"not allower";
+        if(num>0 && name!=="" && phone!=="")
+      {
+        console.log("data is valid");
+      }
+      else
+      {
+        console.log("data is not valid");
+      }
+        console.log(permission);
         console.log(num);
         console.log(phone);
         console.log(name);
+        const data={
+          usernum : num,
+          userphone:phone,
+          username : name
+        }
+        console.log(data.username)
       }
   </script>
 </html>

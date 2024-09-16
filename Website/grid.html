@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media only screen and (max-width:600px) {
+            .red {
+                background-color: aliceblue;
+            }
+            .blue {
+                background-color: black;
+            }
+            .green {
+                background-color: blanchedalmond;
+            }
+            .container {
+                background-color: antiquewhite;
+                /* Change grid layout for small screens */
+                grid-template-columns: 100%;
+                grid-template-rows: auto;
+            }
+        }
+        @keyframes identifier {
+            from
+            {
+                transform: translateX(-100%);
+                
+            }
+            to
+            {
+                transform:translateX(0%);
+            }
+        }
+        @keyframes forred {
+            from
+            {
+                transform: translateY(-100%);
+                
+            }
+            to
+            {
+                transform:translateY(0%);
+            }
+        }
+        @keyframes forgreen {
+            from
+            {
+                transform: translateX(100%);
+                
+            }
+            to
+            {
+                transform:translateX(0%);
+            }
+        }
+        @keyframes iconn
+        {
+            from
+            {
+                transform: translateX(100%);
+            }
+            to
+            {
+                transform: translateX(0%);
+            }
+        }
+        .iconanimate
+        {
+            animation: iconn 3s ease-in;
+           
+            
+        }
+        .iconanimate 
+        {
+            height: 400px;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 33% 33% 33%;
+        }
+        .blue {
+           background-color:  blue;
+           animation: identifier 3s ease-in ;
+        }
+        .green {
+            background-color: green;
+            animation: forgreen 3s ease-in;
+        }
+        .red {
+            background-color: red;
+            animation: forred 3s ease-in;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="blue">
+            <h1>b</h1>
+        </div>
+        <div class="red">
+            <h1>r</h1>
+        </div>
+        <div class="green">
+            <h1>g</h1>
+        </div>
+        <br>
+        <br>
+       
+
+            <i class="fa-brands fa-youtube iconanimate" ></i>
+       
+    </div>
+</body>
+</html>
